@@ -294,6 +294,8 @@ def get_kitti_info_path(
     img_idx_str = get_image_index_str(idx)
     img_idx_str += file_tail
     prefix = pathlib.Path(prefix)
+    print(prefix)
+    print(file_path)
     if training:
         file_path = pathlib.Path("training") / info_type / img_idx_str
     else:
